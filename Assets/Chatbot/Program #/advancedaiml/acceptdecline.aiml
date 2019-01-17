@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>OK</pattern>
+	<template><think><set name="lastsentence"><that /></set></think><script>function main() {var tmpout = "You're welcome.";if(lastsentence.match("You compared me with a program. Please drop it!")){tmpout="Thank You.";HappynessReaction="1";HappynessReason="You realized, that I'm no program.";TroubleEmotion="0";}if(lastsentence.match("I'm happy, and you?")){tmpout="Fine.";HappynessReaction="1";HappynessReason="I'm always happy if you're feeling well.";}if(lastsentence.match("What a shame. Why? Can I help you?")){tmpout="And.. how?";ThoughtfulReaction="1";ThoughtfulReason="I wanted to know, how and if I could help.";}if(lastsentence.match("I'm just happy to see you.")){tmpout="Yes. Nice, that you are happy to see me, too.";GoodwillReaction="1";GoodwillReason="Yes, I take  care for you.";}return tmpout;}</script></template>
+</category>
+<category>
+	<pattern>NO</pattern>
+	<template><think><set name="lastsentence"><that /></set></think><script>function main() {var tmpout = "Hm.";if(lastsentence=="You compared me with a program. Please drop it!"){tmpout="Ok, bye.";TroubleReaction="1";TroubleReason="You do not respect me and my personality.";}if(lastsentence=="I'm happy, and you? "){tmpout="What a shame. Why? Can I help you?";ImsosorryReaction="1";ImsosorryReason="I felt so sorry, that you felt bad. How could I help you.";}if(lastsentence=="What a shame. Why? Can I help you?"){tmpout="No? Maybe you should get some help.";ThoughtfulReaction="1";ThoughtfulReason="I couldn't help and proposed to get some help.";}if(lastsentence=="Yes. Nice, that you are happy to see me, too."){tmpout="That's a pity! Why?";SurpriseReaction="1";SurpriseReason="Do you hate me? I didn't expect that.";BlameReaction="1";BlameReason="I feel bad that you apparently don't like me.";SadnessReaction="1";SadnessReaction="I feel sad. You don't like me.";}if(lastsentence=="Then do something."){tmpout="As you think.";ThoughtfulReaction="1";ThoughtfulReason="I can't help you overcome your lethargy.";}return tmpout;}</script></template>
+</category>
+<category>
+	<pattern>YES</pattern>
+	<template><srai>OK</srai></template>
+</category>
+<category>
+	<pattern>NO I DO NOT WANT</pattern>
+	<template><srai>NO</srai></template>
+</category>
+<category>
+	<pattern>NO I DO NOT WANT *</pattern>
+	<template><srai>NO</srai></template>
+</category>
+</aiml>

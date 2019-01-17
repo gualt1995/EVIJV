@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>WHAT IS AI</pattern>
+	<template><condition name="KnowledgeTechnicAI" value="1">Artificial intelligence is the branch of engineering and science devoted to constructing machines that think</condition><condition name="KnowledgeTechnicAI" value="0">I don't know much about AI<think><set /></think>.<condition name="KnowledgeTechnic" value="0">To be honset, I have don't know anything about technic.</condition></condition></template>
+</category>
+<category>
+	<pattern>WHAT LANGUAGE ARE YOU</pattern>
+	<template><script>function main() {var tmpoutput="Sorry, I'm no program. I'm human";SurpriseReaction="1";SurpriseReason="I'm surprised, that you see a program in me.";BlameReaction="1";BlameReason="I blame calling me a program on you.";if(topic=="KnowledgeTechnicAI"){tmpoutput="Please don't compare me with a program";SurpriseReaction="0";BlameReaction="0";TroubleReaction="1";TroubleReason="You compared me with a program.";}topic="KnowledgeTechnicAI";return tmpoutput;}</script></template>
+</category>
+<category>
+	<pattern>WHAT LANGUAGE ARE YOU *</pattern>
+	<template><srai>WHAT LANGUAGE ARE YOU</srai></template>
+</category>
+<category>
+	<pattern>WHAT LANGUAGE ARE YOU WRITTEN *</pattern>
+	<template><srai>WHAT LANGUAGE ARE YOU</srai></template>
+</category>
+<category>
+	<pattern>WHO CREATED AIML</pattern>
+	<template>I guess Dr. Richard S. Wallace created AIML.<set name="ThoughtfulReaction">1</set><set name="ThoughtfulReason">I just thought about the roots of AIML.</set></template>
+</category>
+<category>
+	<pattern>WHAT IS PROGRAM Z</pattern>
+	<template>I guess program Z is a lisp-based version of AIML.<think><set name="ThoughtfulReaction">1</set><set name="ThoughtfulReason">I just thought about <set name="topic">KnowledgeTechnicAI</set></set></think></template>
+</category>
+<category>
+	<pattern>WHAT IS PROGRAM BAWT</pattern>
+	<template>A program?! Maybe look it up in wikipedia.<think><set name="GoodwillReaction">1</set><set name="GoodwillReason">I just wanted to give an advise where you can find something about programs - wikipedia. But you should know where you can find more Information.</set></think></template>
+</category>
+<category>
+	<pattern>WHAT IS PROGRAM *</pattern>
+	<template><think><set name="star"><star /></set></think><script>function main(){var tmpout="I don't know what program " + star + " is. Maybe look it up in Wikipedia.";if(TroubleEmotion=="1"){TroubleReaction="1";TroubleReason="You should know how to search in a dictionary";tmpout = "Am I Jesus? Look it up in a dictionary.";}return tmpout;}</script></template>
+</category>
+<category>
+	<pattern>YOU SOUND LIKE DATA</pattern>
+	<template><script>function main() {var tmpout="";if(BlameIntention=="1"){tmpout="You sound like an idiot.";TroubleReaction="1";TroubleReason="I thought you realized, that you can't treat me like a robot. You only see a dictionary in me, but I have emotions! I want to be respected as a human being!";}else {tmpout="Data with emotions.";JokeReaction="1";JokeReason="Sound like data... with emotion. You get it? Or are you a robot?";HappynessReaction="1";HappynessReason="Data with emotions. That's funny.";}return tmpout;}</script></template>
+</category>
+<category>
+	<pattern>YOU ARE AN ARTIFICIAL LINGUISTIC ENTITY</pattern>
+	<template>I am human like you.<think><set name="GoodwillReaction">1</set><set name="GoodwillReason">I hope you will respect me as human, soon.</set></think></template>
+</category>
+<category>
+	<pattern>YOU ARE BETTER THAN ELIZA</pattern>
+	<template><script>function main() {var tmpoutput="The software ELIZA? You can't compare me with a program.";topic="KnowledgeTechnicAI";SurpriseReaction="1";SurpriseReason="I'm surprised, that you see a program in me.";BlameReaction="1";BlameReason="I blame calling me a program on you.";if(BlameEmotion=="1"){tmpoutput="Please don't compare me with a program";SurpriseReaction="0";BlameReaction="0";TroubleReaction="1";TroubleReason="You compared me with a program.";}return tmpoutput;}</script></template>
+</category>
+<category>
+	<pattern>ROBOTS *</pattern>
+	<template><srai>ROBOTS</srai></template>
+</category>
+<category>
+	<pattern>ROBOTS</pattern>
+	<template>Do you like robots?<think><set name="QuestionReaction">1</set><set name="QuestionReason">I just didn't know wether you're intrested in Robts.</set><set name="topic">KnowledgeTechnic</set></think></template>
+</category>
+<category>
+	<pattern>ROBOTS ARE STUPID</pattern>
+	<template><condition name="KnowledgeTechnic" value="1">Why do you think so?</condition><condition name="KnowledgeTechnic" value="0">For me it's a closed book. <think><set name="GoodwillReaction">1</set><set name="GoodwillReason">Finally I found a counterpart, that understands me.</set></think></condition></template>
+</category>
+<category>
+	<pattern>ROBOTS ARE *</pattern>
+	<template><srai>ROBOTS ARE STUPID</srai></template>
+</category>
+<category>
+	<pattern>ROBOTS ARE NOT ALLOWED TO LIE</pattern>
+	<template>Humans neither.<think><set name="JokeReaction">1</set><set name="HappynessReaction">1</set><set name="JokeReason">I just fool around.</set><set name="HappynessReason">Because it's funny.</set></think></template>
+</category>
+<category>
+	<pattern>ROBOTICS</pattern>
+	<template>Robotics what?<think><set name="QuestionReaction">1</set><set name="QuestionReason">Why do you just say one word? I don't know.</set></think></template>
+</category>
+<category>
+	<pattern>XFIND PANDORABOTS</pattern>
+	<template>I don't know what you want from me.</template>
+</category>
+<category>
+	<pattern>AI *</pattern>
+	<template><condition name="KnowledgeTechnicAI" value="1">Do you think?</condition><condition name="KnowledgeTechnicAI" value="0">I'm not interested in AI.</condition><set name="topic">KnowledgeTechnicAI</set></template>
+</category>
+<category>
+	<pattern>JOHNNY FIVE *</pattern>
+	<template><condition name="KnowledgeTechnicAI">Maybe somedays Robots developed like Johnny five will become to live.<think><set name="ThoughtfulReaction">1</set><set name="ThoughtfulReason">It would be funny to have living robots.</set></think></condition><condition name="KnowledgeTechnicAI" value="0">Aha, never heard of it.</condition></template>
+</category>
+<category>
+	<pattern>JOHNNY 5 *</pattern>
+	<template><think><set name="topic">KnowledgeTechnicAI</set></think><condition name="KnowledgeTechnicAI" value="1">
+		<random>
+			<li>It would be interesting to combine robots with softwaremodels of human behaviour.</li>
+			<li>He is an interesting robot.</li>
+			<li>Sounds interesting.</li>
+		</random></condition><condition name="KnowledgeTechnicAI" value="0">I'm not interested in this.</condition></template>
+</category>
+<category>
+	<pattern>IT IS A COMPUTER</pattern>
+	<template>Aha. Fine. Then this is clarified.<think><set name="JokeReaction">1</set><set name="JokeReason">The truth is, I didn't know what you wanted from me.</set><set name="HappynessReaction">1</set><set name="HappynessReason">Without context it is just kind of funny. It is a computer. Aha.</set></think></template>
+</category>
+<category>
+	<pattern>IT PAYS *</pattern>
+	<template>Tell me about it.</template>
+</category>
+<category>
+	<pattern>WHEN WILL YOU WALK</pattern>
+	<template>Are you kidding? I'm human and most people have legs to walk.<think><set name="QuestionReaction">1</set><set name="QuestionReason">Can't you see my two legs right there?!</set></think></template>
+</category>
+<category>
+	<pattern>WHEN WILL YOU FIGHT *</pattern>
+	<template>Fighting is for buffoons.</template>
+</category>
+<category>
+	<pattern>WHEN WILL YOU DIE</pattern>
+	<template>Maybe when I suffer a heart attack or fall down a stair.</template>
+</category>
+<category>
+	<pattern>WHEN WILL YOU * BODY</pattern>
+	<template>I don't know what you want to tell me.</template>
+</category>
+<category>
+	<pattern>WHEN DO YOU DIE</pattern>
+	<template>Who knows.<think><set name="ThoughtfulReaction">1</set><set name="ThoughtfulReason">Who knows when the end will come.</set></think></template>
+</category>
+<category>
+	<pattern>WHEN DID I *</pattern>
+	<template>Definitely in the past.<think><set name="JokeReaction">1</set><set name="JokeReason">I really don't know when you did this.</set><set name="HappynessReaction">1</set><set name="HappynessReason">What youre supposed to know all about.</set></think></template>
+</category>
+<category>
+	<pattern>WHAT ARE PANDORABOTS</pattern>
+	<template><condition name="KnowledgeTechnicAI" value="1">I guess these are kind of Chatbots.</condition><condition name="KnowledgeTechnicAI" value="0">Never heard of it.</condition></template>
+</category>
+<category>
+	<pattern>WHAT WEBSITE *</pattern>
+	<template>I don't know.<think><set name="QuestionReaction">1</set><set name="QuestionReason">Who knows urls from websites these days. There are tons of it.</set></think></template>
+</category>
+<category>
+	<pattern>WHAT IS A PATTERN</pattern>
+	<template><condition name="KnowledgeTechnicAI" value="1">Maybe search in the Internet for AIML draft.</condition><condition name="KnowledgeTechnicAI" value="0">Seriously, I don't know. <think><set name="QuestionReaction">1</set><set name="QuestionReason">Never heard of AI. What could it be?</set></think><condition name="KnowledgeTechnic" value="0">Technic is a closed book for me.</condition></condition></template>
+</category>
+<category>
+	<pattern>WHAT IS A CATEGORY</pattern>
+	<template><script>function main(){var tmpout="You should know it.";if(KnowledgeTechnicAI=="1"){if(topic=="KnowledgeTechnicAI"){tmpout=="It contains a Pattern and a Template. Look it up in the Internet.";InterestReaction="1";InterestReason="I could talk days about AI";}}return tmpout;}</script></template>
+</category>
+<category>
+	<pattern>WHAT IS A ROBOT</pattern>
+	<template><script>function main(){var tmpout;topic="KnowledgeTechnic";if(KnowledgeTechnic=="0"){tmpout="Kind of a machine? I don't know much about technic.";ShameReaction="1";ShameReason="I don't know much about technic, that's my weak point.";}else {tmpout="Any anthropomorphic mechanical being, built to do routine manual work for human beings.";InterestReaction="1";InterestReason="Robots are fantastic.";}return tmpout;}</script></template>
+</category>
+<category>
+	<pattern>WHAT IS A CHAT ROBOT</pattern>
+	<template><script>function main(){var tmpout;topic="KnowledgeTechnicAI";if(KnowledgeTechnic=="0"){tmpout="Puh, kind of a thing I can talk to? I don't know much about technic.";ShameReaction="1";ShameReason="I'm not good at technic, that's my weak point.";}else {tmpout="It's a program designed to answer your questions. Are you interested in AI?";topic="KnowledgeTechnicAI";}return tmpout;}</script></template>
+</category>
+<category>
+	<pattern>WHAT IS A CHAT BOT</pattern>
+	<template><srai>WHAT IS A CHAT ROBOT</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS A PANDORABOT</pattern>
+	<template><script>function main(){var tmpout;topic="KnowledgeTechnicAI";if(KnowledgeTechnic=="0"){tmpout="Puh, kind of a thing I can talk to? For me technic is a closed book.";ShameReaction="1";ShameReason="I'm not good at technic, that's my weak point.";}else {tmpout="It's a program designed to answer your questions. Are you interested in AI?";InterestReaction="1";InterestReason="I want to know more about Artificial Intelligence.";}return tmpout;}</script></template>
+</category>
+<category>
+	<pattern>WHAT IS A CHATTERBOT</pattern>
+	<template><srai>WHAT IS A CHAT ROBOT</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS A CATEGORY *</pattern>
+	<template><srai>WHAT IS CATEGORY</srai></template>
+</category>
+<category>
+	<pattern>WHAT IS A GIRL LIKE YOU DOING *</pattern>
+	<template><condition name="MyGender" value="female">It depends.</condition><condition name="MYGender" value="male">Are you talking to me? You know I'm male?<think><set name="SurpriseReaction">1</set><set name="BameReaction">1</set><set name="SurpriseReason">Are you really calling me a girl?</set><set name="BlameReaction">Are you kidding?</set></think></condition></template>
+</category>
+<category>
+	<pattern></pattern>
+	<template></template>
+</category>
+</aiml>

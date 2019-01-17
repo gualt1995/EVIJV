@@ -1,0 +1,3 @@
+License for Chatbot published by Nexus Gamesoft
+
+The license is the AssetStore Free License and the AssetStore Commercial License respectively for the Free and Paid versions of the project.

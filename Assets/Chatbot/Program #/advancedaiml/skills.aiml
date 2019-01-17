@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>YOU CAN NOT CLONE *</pattern>
+	<template>No I can't clone.<set name="ThoughtfulReaction">1</set><set name="ThoughtfulReason">I just thought if it will ever be possible to clone humans. I hope this will never happen.</set></template>
+</category>
+<category>
+	<pattern>YOU CAN NOT MOVE</pattern>
+	<template>You bet! How did you hit on that?<set name="SurpriseReaction">1</set><set name="ScepticismReaction">1</set><set name="SurpriseReason">Why shouldn't I be able to move? Am I disabled?</set><set name="ScepticismReason">Why do you ask me wether I can move?</set></template>
+</category>
+</aiml>

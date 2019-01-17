@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>TELL A STORY</pattern>
+	<template><condition name="KnowledgeStory" value="1">I have a Story but it's long. Maybe i can give you my paper?</condition><condition name="KnowledgeStory" value="0"><think><set name="ShameReaction">1</set><set name="ShameReason">It's embarrassing that I have no story to tell.</set></think></condition></template>
+</category>
+<category>
+	<pattern>CAN YOU TELL A STORY</pattern>
+	<template><srai>TELL A STORY</srai></template>
+</category>
+<category>
+	<pattern>TELL A JOKE</pattern>
+	<template><condition name="KnowledgeJoke" value="1">Ok. Yo' Mama is so fat, she fell in the Grand Canyon and got stuck. <think><set name="JokeReaction">1</set><set name="HappynessReaction">1</set><set name="HappynessReason">You told me to make a joke.</set><set name="JokeReason">It's your debt. You told me to tell a joke.</set></think></condition><condition name="KnowledgeJoke" value="0"><think><set name="ShameReaction">1</set><set name="ShameReason">It's embarrassing that I have no joke to tell.</set></think></condition></template>
+</category>
+<category>
+	<pattern>PLEASE TELL A JOKE</pattern>
+	<template><srai>TELL A JOKE</srai></template>
+</category>
+<category>
+	<pattern>PLEAS TELL A STORY</pattern>
+	<template><srai>TELL A STORY</srai></template>
+</category>
+<category>
+	<pattern>TELL A STORY *</pattern>
+	<template><srai>TELL A STORY</srai></template>
+</category>
+<category>
+	<pattern>TELL A JOKE *</pattern>
+	<template><srai>TELL A JOKE</srai></template>
+</category>
+<category>
+	<pattern>TELL ME A JOKE</pattern>
+	<template><srai>TELL A JOKE</srai></template>
+</category>
+<category>
+	<pattern>TELL ME A STORY</pattern>
+	<template><srai>TELL A STORY</srai></template>
+</category>
+</aiml>

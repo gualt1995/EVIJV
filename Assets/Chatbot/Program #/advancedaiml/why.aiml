@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>WHY</pattern>
+	<template><srai>WHY AND ONLY WHY</srai></template>
+</category>
+<category>
+	<pattern>WHY *</pattern>
+	<template><think><set name="lastsentence"><that /></set><set name="star"><star /></set></think><script>function main() {var tmpout="";if(lastsentence.match("Feel")||lastsentence.match("feel")||lastsentence.match("I am")||lastsentence.match("i am")||lastsentence.match("I'm")||lastsentence.match("i'm")){if(SurpriseEmotion=="1"){tmpout+=SurpriseReason + " ";}if(TrustEmotion=="1"){tmpout+=TrustReason + " ";}if(FearEmotion=="1"){tmpout+=FearReason + " ";}if(SadnessEmotion=="1"){tmpout+=SadnessReason + " ";}if(DisgustEmotion=="1"){tmpout+=DisgustReason + " ";}if(TroubleEmotion=="1"){tmpout+=TroubleReason + " ";}if(HappynessEmotion=="1"){if(HappynessReason==""){HappynessReason="I don't know. Just feeling happy.";QuestionReaction="1";QuestionReason="I really don't know why I am happy at the moment.";}tmpout+=HappynessReason + " ";}if(InterestEmotion=="1"){tmpout+=InterestReason + " ";}if(PainEmotion=="1"){tmpout+=PainReason + " ";}if(HotEmotion=="1"){tmpout+=HotReason + " ";}if(ColdEmotion=="1"){tmpout+=ColdReason + " ";}if(TiredEmotion=="1"){tmpout+=TiredReason + " ";}if(lastsentence.match("boring")){tmpout+= "I don't know why I'm so bored." + " ";}if(tmpout==""){if(star.match("AND ONLY WHY")){tmpout="Serious, I don't know why I feel this way.";QuestionReaction="1";QuestionReason="I didn't understood why I felt this way.";}else{tmpout="Sorry, I don't understand what feeling I'm supposed to look for within myself.";QuestionReaction="1";QuestionReason="I didn't know which feeling you were pointing at within myself.";}}}else{if(star.match("feel")||star.match("are you")){tmpout="Sorry, I don't understand what feeling I'm supposed to look for within myself.";QuestionReaction="1";QuestionReason="I didn't know which feeling you were pointing at within myself.";}else{tmpout="Why what?!";QuestionReaction="1";QuestionReason="I just didn't get what you wanted from me.";}}return tmpout;}</script></template>
+</category>
+</aiml>

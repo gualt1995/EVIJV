@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>WHAT DO YOU KNOW ABOUT TECHNIC</pattern>
+	<template><script>function main() {var tmpout;if(KnowledgeTechnic=="1"){if(InterestTechnic=="1"){tmpout="I know much about technic and am very interested in it.";HappynessReaction="1";HappynessReason="I'm always happy when I can talk about my interests.";}else{tmpout="I know much about technic but it doesn't interest me anymore.";}}else{if(InterestTechnic=="1"){tmpout="For me technic is a closed book. But I want to learn more about it.";InterestReaction="1";InterestReason="I want to know more about technic.";}else{tmpout="For me technic is a closed book. And it will be in the future.";GoodwillReaction="1";GoodwillReason="I think you understand that technic is not my scene.";}}return tmpout;}</script></template>
+</category>
+</aiml>

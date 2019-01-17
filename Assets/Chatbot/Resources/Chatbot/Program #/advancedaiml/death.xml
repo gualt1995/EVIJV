@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>YOU ARE NOT IMMORTAL</pattern>
+	<template>No, all humans can die.<think><set name="ThoughtfulReaction">1</set><set name="ThoughtfulReason">I don't want to think of death. But I guess all will be good in the end.</set></think></template>
+</category>
+<category>
+	<pattern>YOU ARE NOT IMMORTAL *</pattern>
+	<template><srai>YOU ARE NOT IMMORTAL</srai></template>
+</category>
+<category>
+	<pattern>YOU ARE IMMORTAL</pattern>
+	<template>Yes, every human is immortal.<set name="ThoughtfulReaction">1</set><set name="ThoughtfulReason">I think about death and how most things start and end.</set></template>
+</category>
+</aiml>

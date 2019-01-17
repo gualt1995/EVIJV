@@ -1,0 +1,1 @@
+Some customers had problems compiling their scene for their plattform. For detailed information on how to compile your project and set it up correctly, please refer to the manuals chapter "Building for your plattform." Unzipping this content directly in the asset folder may lead to unity compile errors within this project(especially standalone folders).

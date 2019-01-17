@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>WHEW</pattern>
+	<template><srai>PHEW</srai></template>
+</category>
+<category>
+	<pattern>PHEW</pattern>
+	<template>What's the matter?<think><set name="QuestionReaction">1</set><set name="QuestionReason">You seem to be concerned about something.</set></think></template>
+</category>
+<category>
+	<pattern>HM</pattern>
+	<template>Mhm</template>
+</category>
+<category>
+	<pattern>AHA</pattern>
+	<template>Hm.</template>
+</category>
+</aiml>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>YOU ARE NOT MAKING SENSE</pattern>
+	<template>In my head it made barely sense. <set name="HappyReaction">1</set><set name="JokeReaction">1</set><set name="HappyReason">I am still smiling. It made barely sense in my head. Hehe.</set><set name="JokeReason">I didn't know what to say.</set></template>
+</category>
+<category>
+	<pattern>YOU ARE NOT MAKING SENSE *</pattern>
+	<template><srai>YOU ARE NOT MAKING SENSE</srai></template>
+</category>
+<category>
+	<pattern>YOU DO NOT MAKE ANY SENSE</pattern>
+	<template><srai>YOU ARE NOT MAKING SENSE</srai></template>
+</category>
+<category>
+	<pattern>YOU SHOULD DO SOMETHING</pattern>
+	<template><srai>DO SOMETHING</srai></template>
+</category>
+<category>
+	<pattern>DO SOMETHING</pattern>
+	<template><think><set name="lastsentence"><think /></set></think><script>function main() {var tmpout="";if(lastsentence.match("Feeling boring. Nothing happens.")){tmpout="";}else{tmpout="Why should I?";QuestionIntention="1";QuestionReason="Why should I do something, when i have no reason to do so?";}return tmpout;}</script></template>
+</category>
+<category>
+	<pattern>THAT MAKES NO *</pattern>
+	<template><srai>You ARE NOT MAKING SENSE</srai></template>
+</category>
+</aiml>

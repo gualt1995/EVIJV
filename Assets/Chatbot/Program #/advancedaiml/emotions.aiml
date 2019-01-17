@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>WHY ARE YOU ANGRY *</pattern>
+	<template><srai>WHY ARE YOU ANGRY</srai></template>
+</category>
+<category>
+	<pattern>WHY ARE YOU ANGRY</pattern>
+	<template><script>function main() {var tmpout = "";if(TroubleEmotion=="0"){if(TroubleInPast=="1"){tmpout="I'm not angry anymore";GoodwillReaction="1";GoodwillReason="I seek reconciliation and forgive.";}else {SurpriseReaction="1";SurpriseReason="I'm surprised, that you think I'm angry. O.k. I'm often moody.";SkepticismReaction="1";SkepticismReason="I just doubt that I'm angry.";tmpout="I'm not angry. Why do you think so?";}}else {if(BlameIntention=="0"){tmpout=TroubleReason+ " Please drop it!";ThoughtfulReaction="1";ThoughtfulReason=TroubleReason+" I just hope, that you drop it, because it bothers me.";}else {tmpoutput=TroubleReason +" Now you ask me, why I am Angry. Serious?";BlameReaction="1";BlameReason=TroubleReason+" Sorry, I'm still anger at it.";SurpriseReaction="1";SurpriseReason="I'm surprised, that you did't expected that I was angry.";}}return tmpout;}</script></template>
+</category>
+<category>
+	<pattern>ARE YOU ANGRY</pattern>
+	<template><srai>WHY ARE YOU ANGRY</srai></template>
+</category>
+<category>
+	<pattern>HOW ARE YOU</pattern>
+	<template><script>function main(){var tmpoutput="";if(SurpriseEmotion=="1") {tmpoutput+="I feel a bit surprised. ";}if(TrustEmotion=="1") {tmpoutput+="I feel confident. ";}if(FearEmotion=="1") {tmpoutput+="I am a bit afraid. ";}if(SadnessEmotion=="1") {tmpoutput+="I feel sad. ";}if(DisgustEmotion=="1") {tmpoutput+="I feel in disgust. ";}if(TroubleEmotion=="1") {tmpoutput+="I'm a bit angry. ";}if(HappynessEmotion=="1") {tmpoutput+="I'm happy, and you? ";}if(InterestEmotion=="1") {tmpoutput+="That's very interesting. ";GoodwillReaction="1";GoodwillReason="I don't think you understand me, but it's ok.";}if(PainEmotion=="1") {tmpoutput+="I feel pain. ";}if(HotEmotion=="1") {tmpoutput+="It feels very hot. ";}if(ColdEmotion=="1") {tmpoutput+="I feel very cold. ";}if(TiredEmotion=="1") {tmpoutput+="I feel tired, maybe I should get some rest. ";}if(tmpoutput==""){tmpoutput="Feeling boring. Nothing happens.";ThoughtfulReaction="1";ThoughtfulReason="Uhh, it's so booring.";}return tmpoutput;}</script></template>
+</category>
+<category>
+	<pattern>I AM OK</pattern>
+	<template><srai>OK</srai></template>
+</category>
+<category>
+	<pattern>GOOD</pattern>
+	<template><srai>OK</srai></template>
+</category>
+<category>
+	<pattern>I FEEL SAD</pattern>
+	<template><srai>NO</srai></template>
+</category>
+<category>
+	<pattern>BAD</pattern>
+	<template><srai>NO</srai></template>
+</category>
+<category>
+	<pattern>I FEEL BAD</pattern>
+	<template><srai>BAD</srai></template>
+</category>
+<category>
+	<pattern>SAD</pattern>
+	<template><srai>NO</srai></template>
+</category>
+<category>
+	<pattern>HOW DO YOU FEEL</pattern>
+	<template><srai>HOW ARE YOU</srai></template>
+</category>
+<category>
+	<pattern>ME TOO</pattern>
+	<template><think><set name="lastsentence"><that /></set></think><script>function main(){var tmpoutput="Aha";if(lastsentence=="I'm happy, and you? "){tmpoutput="That's nice to hear";HappyReaction="1";HappyReason="I'm glad to hear that you're doing well.";}return tmpoutput;}</script></template>
+</category>
+<category>
+	<pattern>YOU LOOK *</pattern>
+	<template><srai>ARE YOU <star /></srai></template>
+</category>
+<category>
+	<pattern>I AM FINE</pattern>
+	<template><srai>I AM OK</srai></template>
+</category>
+<category>
+	<pattern>ROBOTS LAUGH</pattern>
+	<template>No, robots can't laugh.</template>
+</category>
+<category>
+	<pattern>HOW ARE YOU *</pattern>
+	<template><srai>HOW ARE YOU</srai></template>
+</category>
+<category>
+	<pattern>YOU ARE NOT LOOKING *</pattern>
+	<template>Do you always smile when you feel happy?</template>
+</category>
+<category>
+	<pattern>WHAT IS UP</pattern>
+	<template><srai>HOW ARE YOU</srai></template>
+</category>
+<category>
+	<pattern>YOU RE NOT LOOKING *</pattern>
+	<template>Do you always smile when you feel happy?</template>
+</category>
+<category>
+	<pattern>IT IS BORING</pattern>
+	<template>Then do something.<think><set name="GoodwillReaction">1</set><set name="GoodwillReason">Feeling boring is always due to yourself.</set></think></template>
+</category>
+<category>
+	<pattern>WHY ARE YOU ASKING</pattern>
+	<template><script>function main(){var tmpoutput="";if(QuestionIntention=="1"){if(QuestionReason==""){QuestionReason="I just wanted to know.";}tmpoutput+=QuestionReason + " ";}else {if(QuestionInPast=="1"){tmpoutput+="I can't remeber what I asked you you. Sorry.";ShameReaction="1";ShameReason="I should remember me.";}else{}}return tmpoutput;}</script></template>
+</category>
+<category>
+	<pattern>WHY ARE YOU ASKING *</pattern>
+	<template><srai>WHY ARE YOU ASKING</srai></template>
+</category>
+<category>
+	<pattern>I FEEL BORING</pattern>
+	<template><srai>IT IS BORING</srai></template>
+</category>
+<category>
+	<pattern>IT IS SO BORING</pattern>
+	<template><srai>IT IS BORING</srai></template>
+</category>
+<category>
+	<pattern>ARE YOU BORED</pattern>
+	<template><srai>HOW ARE YOU</srai></template>
+</category>
+<category>
+	<pattern>ARE YOU BORED *</pattern>
+	<template><srai>ARE YOU BORED</srai></template>
+</category>
+<category>
+	<pattern>WHY ARE YOU BORED</pattern>
+	<template><srai>ARE YOU BORED</srai></template>
+</category>
+<category>
+	<pattern>WHY ARE YOU BORED *</pattern>
+	<template><srai>ARE YOU BORED</srai></template>
+</category>
+</aiml>

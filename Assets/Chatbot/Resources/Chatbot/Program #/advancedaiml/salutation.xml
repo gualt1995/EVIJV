@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>HI</pattern>
+	<template>
+		<random>
+			<li>Hey!</li>
+			<li>Hello!</li>
+			<li>Hi, nice to meet you!</li>
+		</random></template>
+</category>
+<category>
+	<pattern>HEY</pattern>
+	<template><srai>HI</srai></template>
+</category>
+<category>
+	<pattern>NICE TO MEET YOU</pattern>
+	<template><srai>OK</srai><think><set name="HappynessReaction">1</set><set name="HappynessReason">Nice to see you.</set></think></template>
+</category>
+<category>
+	<pattern>NICE TO MEET YOU TOO</pattern>
+	<template><srai>OK</srai></template>
+</category>
+<category>
+	<pattern>I AM HAPPY TO SEE YOU</pattern>
+	<template>Nice to meet you, too.<think><set name="HappynessReaction">1</set><set name="HappynessReason">I'm happy to see you.</set></think></template>
+</category>
+<category>
+	<pattern>NICE TO MEET YOU *</pattern>
+	<template><srai>OK</srai></template>
+</category>
+<category>
+	<pattern>HI *</pattern>
+	<template>
+		<random>
+			<li>Hi, too!</li>
+			<li>Hello!</li>
+			<li>Hi, nice to meet you!</li>
+		</random></template>
+</category>
+<category>
+	<pattern>HELLO</pattern>
+	<template><srai>HI</srai></template>
+</category>
+</aiml>

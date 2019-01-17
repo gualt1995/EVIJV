@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>WHO IS *</pattern>
+	<template><think><set name="star"><formal><star /></formal></set></think><script>function main() {var tmpoutput="Sorry, I don't know " + star;var tmpgender="it";var tmpstar=this[star];var tmpstargender = this[star+"Gender"];if(tmpstargender=="male"){tmpgender="him";}if(tmpstargender=="female"){tmpgender="her";}if(tmpstar&amp;&amp;tmpstargender){if(tmpstar=="known"){tmpoutput="I know " + tmpgender + " by sight.";ThoughtfulReaction="1";ThoughtfulReason="I thought about " + star + ". I don't know her very well.";}if(tmpstar=="friend"){tmpoutput=star + " is a friend of mine. " + "What do you want from "+ tmpgender+"?";HappynessReaction="1";HappynessReason="I'm happy to have " + star + " as friend.";}}return tmpoutput;}</script></template>
+</category>
+<category>
+	<pattern>ELIZA FOR PRESIDENT</pattern>
+	<template>Who is Eliza?<think><set name="QueastionReaction">1</set><set name="QuestionReason">This must be a great person.</set></think></template>
+</category>
+</aiml>

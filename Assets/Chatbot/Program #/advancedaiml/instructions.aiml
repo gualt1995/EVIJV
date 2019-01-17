@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>BEND OVER</pattern>
+	<template>Jump on your right foot and then turn three times clockwise.<set name="QuestionReaction">1</set><set name="QuestionReason">What do you realy want from me?</set></template>
+</category>
+</aiml>

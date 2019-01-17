@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>WHAT DO YOU THINK</pattern>
+	<template><script>function main(){var tmpoutput="";if(SurpriseEmotion=="1") {tmpoutput+=SurpriseReason;}if(TrustEmotion=="1") {tmpoutput+=TrustReason;}if(FearEmotion=="1") {tmpoutput+=FearReason;}if(SadnessEmotion=="1") {tmpoutput+=SadnessReason;}if(DisgustEmotion=="1") {tmpoutput+=DisgustReason;}if(TroubleEmotion=="1") {tmpoutput+=TroubleReason;}if(HappynessEmotion=="1") {tmpoutput+=HappynessReason;}if(InterestEmotion=="1") {tmpoutput+=InterestReason;GoodwillReaction="1";GoodwillReason="I don't think you understand me, but it's ok.";}if(PainEmotion=="1") {tmpoutput+=PainReason;}if(HotEmotion=="1") {tmpoutput+=HotReason;}if(ColdEmotion=="1") {tmpoutput+=ColdReason;}if(TiredEmotion=="1") {tmpoutput+=TiredReason;}if(BlameIntention=="1") {tmpoutput+=BlameReason;}if(SkepticismIntention=="1") {tmpoutput+=SkepticismReason;}if(DerisionIntention=="1") {tmpoutput+=DerisionReason;}if(DeclareAbusiveAsBoreIntention=="1") {tmpoutput+=DeclareAbusiveAsBoreReason;}if(HumiliationThreatIntention=="1") {tmpoutput+=HumiliationThreatReason;}if(RejectionRaiseSocialDistanceIntention=="1") {tmpoutput+=RejectionRaiseSocialDistanceReason;}if(WorshipIntention=="1") {tmpoutput+=WorshipReason;}if(ThoughtfulIntention=="1") {tmpoutput+=ThoughtfulReason;}if(JokeIntention=="1") {tmpoutput+=JokeReason;}if(GoodwillIntention=="1") {tmpoutput+=GoodwillReason;}if(ImsosorryIntention=="1") {tmpoutput+=ImsosorryReason;}if(QuestionIntention=="1") {tmpoutput+=QuestionReason;}if(tmpoutput==""){tmpoutput="Nothing special.";ThoughtfulReaction="1";ThoughtfulReason="What am I going to do now.. what do I want.";}return tmpoutput;}</script></template>
+</category>
+</aiml>

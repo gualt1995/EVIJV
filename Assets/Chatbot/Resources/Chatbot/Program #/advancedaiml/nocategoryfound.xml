@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>*</pattern>
+	<template>I'm sorry, I don't understand.<think><set name="QuestionReaction">1</set><set name="QuestionReason">Sorry, I just don't you.</set></think></template>
+</category>
+</aiml>

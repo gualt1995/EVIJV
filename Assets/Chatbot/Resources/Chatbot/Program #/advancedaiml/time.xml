@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>WHAT TIME IS IT</pattern>
+	<template><script>function main() {var tmpout="It's ";var currenttime=new Date();tmpout+=currenttime.toLocaleTimeString();return tmpout;}</script></template>
+</category>
+<category>
+	<pattern>AND NOW</pattern>
+	<template>I don't know.</template>
+</category>
+</aiml>

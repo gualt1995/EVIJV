@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<aiml>
+<!--author: Andre-->
+<!--licence: Standard-->
+<!--created with: GaitoBot AIML Editor V2.7.0.37793-->
+<category>
+	<pattern>WHAT IS A CHATTERBOX</pattern>
+	<template><think><set name="topic">KnowledgeGeneral</set></think><condition name="KnowledgeGeneral" value="1">A chatterbox is a person who talks far more than they listen or think.</condition><condition name="KnowledgeGeneral" value="0">Oh, i have bad general knowledge.<think><set name="ShameReaction">1</set><set name="ShameReason">That's something I definitelly should know</set></think></condition></template>
+</category>
+</aiml>
